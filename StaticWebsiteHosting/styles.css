@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    height: calc(100vh - 200px); 
+    overflow-y: auto; 
+    margin-top: 20px;
+    border: 2px solid black; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+}
+
+table tbody tr {
+    height: calc((100vh - 150px) / 11); 
+}
+
+.pagination-controls {
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
